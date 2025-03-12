@@ -1,0 +1,64 @@
+body {           
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+}
+.encabezado {
+    background: #f1aaaa;
+    padding: 80px;
+    text-align: center;
+    box-shadow: 5px 9px 6px rgba(0, 0, 0, 0.1);
+}
+.encabezado h1{
+    font-size: 50px;
+    text-align: center;
+    color: #edebeb;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 5px solid #f1aaaa;
+}
+.cont p{
+    font-size: 20px;
+    text-align: justify;
+}
+.cont medio {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+.pie {
+    font-size: 25px;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    }
+.btn-back {
+    background-color: #f1aaaa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    position:relative; /* Fija el botón en la pantalla */
+    bottom: 0px; /* Lo posiciona 20px desde abajo */
+    left: 50%; /* Lo mueve al centro horizontal */
+    transform: translateX(-50%);
+}
+
+.btn-back:hover {
+    background-color: rgb(255, 199, 182);
+}

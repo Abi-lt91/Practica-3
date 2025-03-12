@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1f3c8f, #4b6cb7); 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    width: 100%;
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animación de entrada del título */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de los botones de descarga */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+/* Estilo para cada botón */
+.download-btn {
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Gradiente vibrante */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s, box-shadow 0.3s ease, background 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* mouse sobre los botones */
+.download-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #f9d423, #ff4e50); /* Cambio de dirección del gradiente */
+}
+
+/* Efectos de las imágenes en los botones */
+.download-btn img {
+    transition: transform 0.3s;
+}
+
+.download-btn:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo del botón de regresar */
+.back-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Efectos del botón de regresar */
+.back-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #218838;
+}

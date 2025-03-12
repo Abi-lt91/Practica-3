@@ -1,0 +1,214 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0e0e0e;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    max-width: 450px; /* Limitar el ancho máximo del body */
+    margin-left: 450px; /* Desplazar todo el contenido hacia la derecha */
+}
+
+
+.container {
+    max-width: 900px;
+    background: #ffffff; /* Blanco puro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    margin: 50px auto;
+    border-left: 5px solid #7b68ee; /* Azul violeta */
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: #f512f5; /* Neón rosa */
+    color: #fff700; /* Texto verde neón */
+    border-radius: 95px;
+    box-shadow: 0 4px 15px rgba(455, 500, 455, 0.6);
+}
+
+.main {
+    grid-area: main;
+    background-color: #ef3a94; /* Neón rosa oscuro */
+    padding: 20px;
+    border: 3.2px dashed #3cffff; /* Azul neón */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(362, 418, 455, 8.6);
+}
+
+.social-links a {
+    display: block;
+    margin: 10px 0;
+    color: #f7f7f7;
+    text-decoration: none;
+    padding: 18px 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 19px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a.instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); /* Degradado Instagram */
+}
+
+.social-links a.twitter {
+    background: linear-gradient(100deg, #0081b0 50%, #ffffff); /* Degradado Twitter (azul y blanco) */
+}
+
+.social-links a.facebook {
+    background: linear-gradient(160deg, #181e2d 50%, #ffffff 90%); /* Degradado más sutil para Facebook */
+}
+
+.social-links a:hover {
+    box-shadow: 0 3px 72px rgba(0, 0, 0, 0.3); /* Sombra más fuerte en hover */
+}
+
+/* Enfoque para hover según el color de cada red social */
+.social-links a.instagram:hover {
+    background: linear-gradient(45deg, #8134af, #f58529, #dd2a7b);
+}
+
+.social-links a.twitter:hover {
+    background: linear-gradient(15deg, #ffffff, #0084b4);
+}
+
+.social-links a.facebook:hover {
+    background: linear-gradient(5deg, #ffffff, #000000);
+}
+
+/* Cambiar el color de las letras de las secciones */
+.main h2 {
+    color: #efff13; /* Color neón verde-azul */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 255, 204, 0.6); /* Sombra sutil para un efecto neón */
+}
+
+.sidebar h2 {
+    color: #eaff00; /* Color neón verde-azul */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 255, 204, 0.6); /* Sombra sutil para un efecto neón */
+    margin-top: -30px;
+}
+
+.si {
+    color: #eaff00; /* Color neón verde-azul */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgb(0, 255, 204); /* Sombra sutil para un efecto neón */
+    margin-top: 70px;
+}
+
+.sidebar img {
+    width: 170px;
+    height: 190px;
+    border-radius: 0%;
+    object-fit: cover;
+    margin-bottom: 50px;
+    margin-top: 30px; /* Imagen más arriba */
+    
+    /* Borde RGB animado */
+    border: 4px solid;
+    border-image-source: linear-gradient(45deg, 
+        #ff0000, /* Rojo */
+        #ff7300, /* Naranja */
+        #fffb00, /* Amarillo */
+        #48ff00, /* Verde */
+        #00ffd5, /* Turquesa */
+        #0008ff, /* Azul */
+        #7a00ff, /* Morado */
+        #ff00a6 /* Rosa */
+    );
+    border-image-slice: 1;
+
+    /* Animación del borde RGB */
+    animation: rgb-border 5s linear infinite;
+}
+
+@keyframes rgb-border {
+    0% {
+        border-image-source: linear-gradient(0deg, #ff0000, #ff7300, #fffb00);
+    }
+    25% {
+        border-image-source: linear-gradient(90deg, #48ff00, #00ffd5, #0008ff);
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, #7a00ff, #ff00a6, #ff0000);
+    }
+    75% {
+        border-image-source: linear-gradient(270deg, #ff7300, #fffb00, #48ff00);
+    }
+    100% {
+        border-image-source: linear-gradient(360deg, #ff0000, #ff7300, #fffb00);
+    }
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #9803b3; /* Neón azul-verde */
+    padding: 20px;
+    border-radius: 15px;
+    border: 3.2px dashed #ff3cdb; /* Azul neón */
+    position: relative; /* Necesario para la animación */
+    animation: glow 3s infinite linear; /* Aplicar la animación */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgb(255, 0, 255), 0 0 15px rgb(255, 0, 255), 0 0 25px rgb(255, 0, 255); /* Rosa */
+    }
+    25% {
+        box-shadow: 0 0 5px rgb(0, 255, 255), 0 0 15px rgb(0, 255, 255), 0 0 25px rgb(0, 255, 255); /* Cyan */
+    }
+    50% {
+        box-shadow: 0 0 5px rgb(0, 255, 0), 0 0 15px rgb(0, 255, 0), 0 0 25px rgb(0, 255, 0); /* Verde */
+    }
+    75% {
+        box-shadow: 0 0 5px rgb(255, 255, 0), 0 0 15px rgb(255, 255, 0), 0 0 25px rgb(255, 255, 0); /* Amarillo */
+    }
+    100% {
+        box-shadow: 0 0 5px rgb(255, 0, 255), 0 0 15px rgb(255, 0, 255), 0 0 25px rgb(255, 0, 255); /* Rosa */
+    }
+}
+
+.main Video{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 5px solid #7b68ee; /* Azul violeta */
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(123, 104, 238, 0.3); /* Sombra elegante */
+    background: #00ff77; /* Fondo lila claro */
+    text-align: center;
+    max-width: 200px; /* Limitar el ancho máximo del body */
+    margin-left: 40px;
+}
+
+.back-btn {
+    background-color: #9a03e5; /* Rosa pastel */
+    color: #fff;
+    border: none;
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 50px; /* Desplazamiento hacia abajo */
+}
+
+.back-btn:hover {
+    background-color: #270911; /* Rosa más intenso */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+

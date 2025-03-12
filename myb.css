@@ -1,0 +1,245 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 0;
+    padding: 20px;
+    background-color: #616d83 ;
+    height: 200vh;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 100%; 
+    max-width: 600px; 
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+.perfil p{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.gustos p{
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+}
+
+.gustos{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.music{
+    background-color: #292a2a ;
+    border-radius: 15px;
+}
+
+.Redes{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+table{
+    border: none;
+}
+
+.t1 td{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 4px 10px;
+}
+
+
+.t2 td{
+    position: relative;
+    border-radius: 15px;
+    background-color: #b5e2fe ;
+    border: 2px solid #b5e2fe;
+    margin: 10px auto;
+    padding: 4px 10px;
+    color: black;
+}
+
+.t2{
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    padding: 10px;
+    margin: auto; 
+}
+
+.t3 td{
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid #b5e2fe;
+    margin: 10px auto;
+    padding: 4px 10px;
+    color: black;
+}
+
+.t3{
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    padding: 10px;
+    margin: auto;
+}
+
+/*Centrar las imágenes y hacerlas responsivas */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaciado uniforme entre las imágenes */
+}
+
+.imagenes img {
+    width: 100%; 
+    border-radius: 15px;
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    height: 150px; /* Altura fija para que no se distorsionen */
+    object-fit: cover; /* Recorta las imágenes para que mantengan las proporciones */
+}
+
+/* ---- Centrar el video y texto de música ---- */
+video {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 20px;
+}
+
+button:hover span{
+    background: none;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.b1{
+    
+    border-radius: 100px;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #095dfa ;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+
+    background-color: #095dfa;
+    cursor: pointer;
+    transition: .3s;
+    padding: 4px 0;
+    display: inline;
+
+}
+
+.b1 span{
+    text-align: center;
+    background-color: black;
+    padding: 4px 20px;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+
+.b2{
+    border-radius: 100px;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #095dfa ;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+
+    background-color: #095dfa;
+    cursor: pointer;
+    transition: .3s;
+    padding: 4px 0;
+    display: inline;
+}
+
+.b2 span{
+    text-align: center;
+    background-color: black;
+    padding: 4px 20px;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+.b3{
+    border-radius: 100px;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #095dfa ;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+
+    background-color: #095dfa;
+    cursor: pointer;
+    transition: .3s;
+    padding: 4px 0;
+    display: inline;
+}
+
+.b3 span{
+    text-align: center;
+    background-color: black;
+    padding: 4px 20px;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+.b4{
+    border-radius: 100px;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #095dfa ;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+
+    background-color: #095dfa;
+    cursor: pointer;
+    transition: .3s;
+    padding: 4px 0;
+    display: inline;
+}
+
+.b4 span{
+    text-align: center;
+    background-color: black;
+    padding: 4px 20px;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+a{
+    text-decoration: none;
+    color: #095dfa;
+}
